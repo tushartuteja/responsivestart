@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body > header {
+    display: flex;
+    width: 100%;
+    background-color: grey;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 8px 32px;
+    box-sizing: border-box;
+}
+
+body > header img {
+    height: 35px;
+}
+
+body > header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+body > header nav ul li {
+    margin-left: 8px;
+}
+
+body > header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+body > main {
+    padding: 8px 48px;
+    margin-top: 51px;
+    max-height: 500px;
+    overflow: scroll;
+}
+
+body > main > section {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+body > main > section > header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgrey;
+    padding: 6px 18px;
+}
+
+div.social ul {
+    display: flex;
+    list-style: none;
+}
+
+div.social ul li img {
+    height: 25px;
+}
+
+div.social ul li {
+    margin-left: 8px;
+}
+
+body > main > section > main {
+    display: flex;
+    padding: 6px 18px;
+}
+
+div.left img {
+    height: 100px;
+}
+
+div.right {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.products {
+    display: flex;
+    justify-content: space-around;
+}
+
+div.products img {
+    height: 100px;
+}
+
+@media (max-width: 720px) {
+    body > main > section > main {
+        flex-direction: column;
+    }
+    div.products {
+        flex-direction: column;
+        justify-content: center;
+    }
+    body > main {
+        padding: 8px 8px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    div.right {
+        margin-left: 0;
+    }
+    body > main > section > main {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    body > main > section > header {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+  
+
+
+}
+
+
+@media print 
+{
+	body > header{
+		display:none;
+	}
+}
